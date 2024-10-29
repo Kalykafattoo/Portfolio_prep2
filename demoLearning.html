@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbs on Foods</title>
+</head>
+<body>
+<main>
+    <heder>
+        <h1>Nutrition Page</h1>
+    </heder>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quos sapiente fuga nesciunt numquam veritatis voluptatum voluptate fugit laudantium. Eum dolor dignissimos officiis totam quaerat corrupti voluptatibus pariatur soluta natus!</p>
+    <p>Aliquam laborum in eius vero minus unde. Harum nisi sunt reprehenderit possimus. Quaerat adipisci numquam facere nam, similique temporibus soluta at placeat ad. Impedit quae, commodi vero eveniet minus dolor!</p>
+    <p>Sint minus aperiam, eos a, provident, cum ullam eveniet accusantium repellendus magni quas dolor. Amet, dolorem quia aspernatur est laborum doloribus veniam impedit aliquam repudiandae nam voluptatem corporis illo similique?</p>
+    <p>Voluptas provident dicta adipisci velit nisi repellat voluptatibus architecto amet cumque accusamus minus sit nam, possimus error quod quidem labore deserunt nihil! Iste temporibus maxime tenetur, aut consequatur architecto libero.</p>
+    <h2> List of foods and Carbs in it</h2>
+    <table>
+        <tr>
+            <thead>
+            <th><b> Type of food </b></th>
+            <th><b>Portion Size</b></th>
+            <th><b>Ammount of Carbs&#40;g&#41;</b></th>
+        </thead>
+        </tr>
+        <tbody>
+    <tr>        
+    <td>Avocado</td>
+        <td>1/2 Cup</td>
+        <td>8</td>
+    </tr>
+    <tr>
+        <td>Watermelon,diced</td>
+        <td> 1 Cup</td>
+        <td>11</td>
+    </tr>
+    <tr> 
+        <td>Cantaloupe, diced</td>
+        <td>1 Cup</td>
+        <td>13</td>
+    </tr>  
+    <tr>
+        <td> Strawberry, halves</td>
+        <td>1 Cup</td>
+        <td>12</td>
+    </tbody>
+    </tr> 
+    <tr>
+        <td>Black Beans</td>
+        <td>1/2 Cup</td>
+        <td>18 to 22</td>
+    </tr> 
+    <tr>
+        <td>Peas</td>
+        <td>1/2 Cup</td>
+        <td>12</td>
+        <tr>
+            <td>Popcorn</td>
+            <td>3 Cups</td>
+            <td>15</td>
+        </tr>
+    </tr>     
+
+    </table>
+    <br>
+    <h3>Types of Form</h3>
+    <h3>Forms Demo</h3>
+    <!--file:///C:/tacos?Username=Karoline&password=45788991&color=%233d42c7&numb=74&Numb=97-->
+
+    <form action="/tacos">
+        <p>
+        <label for="Username">Enter your Username:</label>
+        <input id="Username"type=text" placeholder="Username" name="Username">
+    </p>
+    <p>
+        <label for="password">Type your password:</label>
+        <input type="password" placeholder="password" id="password" name="password">
+    </p>
+    <p>
+    <label for="color">Enter your favourite collor:</label>
+        <input id="color"type="color"name="color">
+
+</p>
+<p>
+    <label for="numbersel">Select your Lucky number:</label>
+        <input id="numbersel" type="number" placeholder="Selec a number"name="numb">
+
+</p>
+
+<!--Alertnative way to lable an input(less common)-->
+<label>
+    Enter a Number:
+    <input type="number" placeholder="enter a number" name="Numb" min="0" max="1000">
+</label>
+<!--this button doesn't submit the form b/c of the "type" attribute-->
+<button type="button"> Regular button (won't submit)</button>
+
+<button>
+    Click Here To Submit
+</button>
+<!--This button submits the form!-->
+<button> Submit!!!!</button>
+<!--So does this one:-->
+<input type="submit" value="Click Me!">
+    </form>
+    <hr>
+    <!--Outside of a form, no default behavior-->
+    <button> Not inside Form </button>
+    <h2> Hijacking Search</h2>
+    <h3>Search Reddit</h3>
+    <form action="http://www.reddit.com/search">
+        <input type="text" name="q">
+        <button>Search Reddit</button>
+    </form>
+    <h3>Search Google</h3>
+    <form>
+        <form action="http://www.google.com/search">
+            <input type="text" name="q">
+            <button> Search Google</button>
+    </form>
+    <h3>Search Youtube</h3>
+    <form action="http://www.youtube.com/results">
+        <input type="text" name="search_query">
+        <button>Search Youtube</button>
+    </form>
+    <div>
+        <h2>More Imputs!</h2>
+        <form action="/birds">
+            <input type="checkbox" name="agree_tos"id="agree">
+            <lable for="agree">I agree to the terms and conditions</lable>
+            <p>
+                <label for="s">Small</label>
+                <input type="radio" name="size" id="s">
+                <label for="m">Medium</label>
+                <input type="radio" name="size"id="m" id="m">
+                <label type="b">Big</label>
+                <input type="radio" name="size" id="B" id="b">
+                <hr>
+                <label for="meal"> Please Select an Entree</label>
+                <br>
+                <select name="meal" id="meal">
+                    <option value="fish">Fish</option>
+                    <option value="veg">Vegetarian</option>
+                    <option value="steak">Steak</option>Steak
+
+                </select>
+            </p>
+          
+        </form>
+        
+
+    </div>
+    <p>
+        <lable for="pboat">Amount of people per boat</lable>
+        <input type="range" id="pboat" min="2" max ="6" name="numb_people">
+    </p>
+    <p> Note: number of people per boat is minimun 2 and maximum 6 people</p>
+    <p>
+        <label for="requets">Any Special Requests?</label>
+        <br>
+        <textarea id="requests"rows="5" cols="40" name="Requests" placeholder="Type something here"></textarea>
+    </p>
+
+  <button>Submit</button>
+  <h2>Validations Demo</h2>
+  <form action="/dummy">
+    <label for="first">Enter First name</label>
+    <input type="text"name="first" id="firt"required>
+   
+
+    <p>
+        <lable for="username">Username</lable>
+        <input type="text" id="username" name="username"minlength="5"maxlength="15"required>
+    </p>
+    <button>Submit</button>
+
+</form>
+
+</body>
+</main>
+</html>
